@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   DataSense AI design tokens
+   A "research instrument" identity: warm paper, ink navy, signal amber,
+   hairline rules, numerals in mono. No gradient SaaS slop.
+------------------------------------------------------------------- */
+:root {
+  --paper: #f5f2ec;
+  --surface: #fffefb;
+  --surface-2: #efebe2;
+  --ink: #141922;
+  --ink-2: #3c4350;
+  --muted: #6f6a60;
+  --line: #e0d9cc;
+  --line-strong: #c9c0af;
+  --accent: #a9661a;
+  --accent-ink: #fffaf2;
+  --accent-soft: #f2e3cb;
+  --teal: #1d6a66;
+  --slateblue: #3f5878;
+  --clay: #9c573a;
+  --moss: #5b7043;
+  --plum: #684a6b;
+  --danger: #a33a2b;
+  --ok: #3f6b35;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1217;
+    --surface: #161b22;
+    --surface-2: #1d232c;
+    --ink: #e9e4da;
+    --ink-2: #c3bdb2;
+    --muted: #918a7e;
+    --line: #2a313b;
+    --line-strong: #3b444f;
+    --accent: #d99a48;
+    --accent-ink: #1a1206;
+    --accent-soft: #33291a;
+    --teal: #58a7a1;
+    --slateblue: #8ba6c8;
+    --clay: #c78a6b;
+    --moss: #8fa576;
+    --plum: #a887ab;
+    --danger: #d07a6b;
+    --ok: #86a878;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-teal: var(--teal);
+  --color-slateblue: var(--slateblue);
+  --color-clay: var(--clay);
+  --color-moss: var(--moss);
+  --color-plum: var(--plum);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-instrument-serif);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.num {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* hairline rule used across the app instead of heavy card shadows */
+.rule {
+  border-color: var(--line);
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+/* thin scrollbars for dense data tables */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.skeleton {
+  background: var(--surface-2);
+  animation: shimmer 1.6s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+/* number inputs: hide spinners for a calmer UI */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
