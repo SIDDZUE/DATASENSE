@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-11-06T08:54:01.864461+00:00",
+  "acquired": [
+    {
+      "name": "AI4I 2020 Predictive Maintenance",
+      "original_filename": "ai4i2020.csv",
+      "prepared_file": "C:\\Users\\Siddarth\\Desktop\\B.Tech\\PROJECTS\\IoT PROJECTS\\DataSense-AI\\data\\raw\\prepared\\ai4i2020.csv",
+      "format": "csv",
+      "n_rows": 10000,
+      "n_cols": 14,
+      "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+      "provider": "Stephan Matzka \u2014 UCI Machine Learning Repository",
+      "download_date": "2026-11-06",
+      "license": "CC BY 4.0",
+      "notes": "Synthetic industrial dataset generated from a real milling-process model. It is NOT factory-collected telemetry. Contains labelled failures (Machine failure + 5 failure modes).",
+      "has_labels": true
+    },
+    {
+      "name": "Breast Cancer Wisconsin (Diagnostic)",
+      "original_filename": "wdbc.data",
+      "prepared_file": "C:\\Users\\Siddarth\\Desktop\\B.Tech\\PROJECTS\\IoT PROJECTS\\DataSense-AI\\data\\raw\\prepared\\wdbc.csv",
+      "format": "csv",
+      "n_rows": 569,
+      "n_cols": 32,
+      "source_url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+      "provider": "W. Wolberg, O. Mangasarian \u2014 UCI Machine Learning Repository",
+      "download_date": "2026-11-06",
+      "license": "CC BY 4.0",
+      "notes": "Public research dataset. diagnosis M/B is the label. Column headers reconstructed from wdbc.names (the original file has no header). Outputs must not be presented as medical diagnoses.",
+      "has_labels": true
+    },
+    {
+      "name": "Credit Card Fraud Detection",
+      "original_filename": "creditcard.csv",
+      "prepared_file": "C:\\Users\\Siddarth\\Desktop\\B.Tech\\PROJECTS\\IoT PROJECTS\\DataSense-AI\\data\\raw\\prepared\\creditcard.csv",
+      "format": "csv",
+      "n_rows": 284807,
+      "n_cols": 31,
+      "source_url": "https://www.openml.org/d/42175",
+      "provider": "Universite Libre de Bruxelles (MLG) \u2014 original Kaggle dataset",
+      "download_date": "2026-11-06",
+      "license": "ODbL (Open Database License) per original distribution",
+      "notes": "Financial research dataset (PCA-anonymised features, 'Class' label, 0.172% fraud). Downloaded via OpenML because Kaggle authentication was unavailable. Not a live payment integration.",
+      "has_labels": true
+    },
+    {
+      "name": "Individual Household Electric Power Consumption",
+      "original_filename": "household_power_consumption.txt",
+      "prepared_file": "C:\\Users\\Siddarth\\Desktop\\B.Tech\\PROJECTS\\IoT PROJECTS\\DataSense-AI\\data\\raw\\prepared\\household_power.parquet",
+      "format": "parquet",
+      "n_rows": 2075259,
+      "n_cols": 8,
+      "source_url": "https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption",
+      "provider": "Georges Hebrail, Alice Berard \u2014 UCI Machine Learning Repository",
+      "download_date": "2026-11-06",
+      "license": "CC BY 4.0",
+      "notes": "Minute-level electrical measurements of one household (2006-2010). Timestamps derived from Date+Time; '?' missing values \u2192 NaN. Ideal genuine time-series for the IoT replay simulator.",
+      "has_labels": false
+    },
+    {
+      "name": "UCI Air Quality",
+      "original_filename": "AirQualityUCI.csv",
+      "prepared_file": "C:\\Users\\Siddarth\\Desktop\\B.Tech\\PROJECTS\\IoT PROJECTS\\DataSense-AI\\data\\raw\\prepared\\air_quality.csv",
+      "format": "csv",
+      "n_rows": 9357,
+      "n_cols": 14,
+      "source_url": "https://archive.ics.uci.edu/dataset/360/air+quality",
+      "provider": "S. De Vito et al. \u2014 UCI Machine Learning Repository",
+      "download_date": "2026-11-06",
+      "license": "CC BY 4.0",
+      "notes": "Air-quality sensor measurements (CO, NMHC, C6H6, NOx, NO2, O3, temperature, humidity) from an Italian city. -200 missing markers converted to NaN. Timestamp column derived from Date+Time.",
+      "has_labels": false
+    }
+  ],
+  "not_acquired": []
+}

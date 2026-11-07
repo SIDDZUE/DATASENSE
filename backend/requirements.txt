@@ -1,0 +1,12 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart
+pandas>=2.0
+numpy>=1.24,<2.3
+scikit-learn>=1.4
+openpyxl
+pyarrow
+joblib
+reportlab>=4
+pytest
+httpx

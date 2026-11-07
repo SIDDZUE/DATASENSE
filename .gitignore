@@ -1,0 +1,40 @@
+# DataSense AI - gitignore
+# Exclude virtual environments, caches, build artifacts, raw downloads, stored uploads
+
+.node_modules/
+.next/
+.venv/
+.git/
+__pycache__/
+*.pyc
+*.pyo
+*.pdb
+*.log
+
+# DataSense-specific
+data/raw/
+data/uploads/
+data/prepared/
+
+# Reports and exports
+reports/*.pdf
+reports/*.json
+
+# Source distribution
+DataSense-AI-Source.zip
+DataSense-AI-Source.zip.sha256
+
+# PowerShell / Windows
+*.ps1_summary*
+Thumbs.db
+Desktop.ini
+
+# IDE / editor temporary files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# DataSense AI database (generated at runtime)
+datasense.db
